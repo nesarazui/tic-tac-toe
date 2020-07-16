@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: pink;
+  background-color: rgb(224, 16, 103);
   margin-top: 10px;
   min-height: 50px;
   display: flex;
@@ -64,14 +64,13 @@
 }
 
 #homepageContainer {
-  background-color: lightsalmon;
-  margin: 50px;
+  /* background-color: lightsalmon; */
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: red;
 }
 .pageHeader {
   color: black;
@@ -85,9 +84,28 @@
   flex-direction: row;
   margin: 5px;
   justify-content: flex-start;
-  size: 20px;
+  /* size: 10px; */
+  font-size: 25px;
+  color: wheat;
 }
 
 .buttonStyle {
   margin: 5px;
+}
+
+.cardLinks {
+  /* background-color: pink; */
+  margin: 25px;
+}
+
+
+.card-header {
+  color: white;
+  
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
 }
