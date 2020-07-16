@@ -14,14 +14,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: pink;
+  margin-top: 10px;
+  min-height: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .App-link {
@@ -48,4 +50,44 @@
 
 .row {
   display: flex;
+}
+
+.contentPos {
+  /* background-color: grey; */
+  /* min-height: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#homepageContainer {
+  background-color: lightsalmon;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: red;
+}
+.pageHeader {
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  justify-content: flex-start;
+  size: 20px;
+}
+
+.buttonStyle {
+  margin: 5px;
 }
