@@ -154,7 +154,7 @@ class Board extends Component {
         return (
             <div className="contentPos">
                 <div className="pageHeader">
-                 A simple game of Tic Tac Toe.
+                 Tic Tac Toe
                  {this.state.status ? 
                  (
                      <div>
@@ -170,10 +170,12 @@ class Board extends Component {
                  null
                  }
                 </div>
+                <div className="ticTacToeContainer">
                 <Row rowId="0" updateScore={this.updateScore} userTurn={this.state.userTurn} board={this.state.board[0]} />
                 <Row rowId="1" updateScore={this.updateScore} userTurn={this.state.userTurn} board={this.state.board[1]} />
                 <Row rowId="2" updateScore={this.updateScore} userTurn={this.state.userTurn} board={this.state.board[2]} />
-                <Button onClick={this.undoMove} variant="light">Undo Move</Button>
+                </div>
+                <Button className="customButtons" onClick={this.undoMove} variant="light">Undo Move</Button>
                 <Button onClick={this.clearBoard} variant="light">Reset Game</Button>
                 <DashboardTicTacToe round={this.state.gameRound} winner={this.state.previousWinner} winData={this.state.winData}/>
             </div>

@@ -41,13 +41,21 @@
 
 .cell {
   border-width: 5px;
-  width: 50px;
-  height: 50px;
+  width: 5vw;
+  min-height: 5vw;
   border-color: white;
   border-style: solid;
   background-color: lightpink;
+  position: relative;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.mark {
+  size: 100px
+}
 .row {
   display: flex;
 }
@@ -59,8 +67,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(20px + 2vmin);
+  color: black;
 }
 
 #homepageContainer {
@@ -75,9 +83,78 @@
 .pageHeader {
   color: black;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background-color: green; */
 }
+
+.catGalleryContainer {
+  display: flex;
+  width: 75%;
+  flex-direction: row;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.featuredCatContainer {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.catPic {
+  width: 210px;
+  height: 250px;
+  margin: 5px;
+}
+
+.catPicFeatured {
+  width: 210px;
+  height: 250px;
+  margin: 20px;
+}
+
+
+.pageSubHeader {
+  color: darkslategray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70%;
+}
+
+.joke {
+  color: darkslategray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 70%;
+  padding: 20px;
+}
+
+.jokeContainer {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.ratingsContainer {
+  /* width: 500px; */
+  padding: 10px;
+  margin: 10px;
+  position: center;
+  display: flex;
+  flex-direction: row;
+  background-color: honeydew;
+
+}
+
+.ratingButtons {
+   justify-content: center;
+} 
 
 .navLinks {
   display: flex;
@@ -109,3 +186,12 @@
   flex-direction: column;
   margin: 25px;
 }
+
+.ticTacToeContainer {
+  margin-bottom: 20px;
+}
+
+.customButtons {
+  margin: 10px;
+}
+
